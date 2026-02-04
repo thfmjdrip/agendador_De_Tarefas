@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TarefaConverterManual {
 
-    TarefasEntity paraEntity(TarefasDto dto){
+    public TarefasEntity paraEntity(TarefasDto dto){
         return TarefasEntity.builder()
                 .dataCriacao(dto.getDataCriacao())
                 .descricao(dto.getDescricao())
@@ -16,4 +16,5 @@ public class TarefaConverterManual {
                 .dataEvento(dto.getDataEvento())
                 .build();
     }
+
 }
